@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📰 Newsletter Page Tempalte</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --font-size-title:3rem;
+    --font-size-sub-title:1.25rem;
+    --font-size-placeholder:1rem;
+    --font-size-text-button:1rem;
+    --font-size-help-text:0.875rem;
+
+    --black-color: #000000;
+    --white-color:  #FFFFFF;
+    --white-bg-color: #F9FAFB;
+    --grey-color: #6C727F;
+    --light-grey-color: #E5E7EB;
+    --button-color: #3662E3;
+
+    --font-weight-semi-bold: 600;
+    --font-weight-medium: 500;
+    --font-weight-regular: 400;
+}
+*{
+    font-family: "Poppins", serif;
+}
+.container__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.title {
+    font-size: var(--font-size-title);
+    font-weight: var(--font-weight-semi-bold);
+    margin: 0;
+}
+.content__subtitle {
+    display: flex;
+    justify-content: center;
+}
+p.subtitle {
+    color: var(--grey-color);
+    font-size: var(--font-size-sub-title);
+    width: 57%;
+}
+.container__form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+}
+.container__input{
+    width: 100%;
+}
+.container__button {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.button{
+    background-color: var(--button-color);
+    color: var(--white-color);
+    font-weight: var(--font-weight-medium);
+    padding: 15px;
+    border-radius: 10px;
+}
+.container__popup {
+    display: flex;
+    justify-content: center;
+}
+.content__popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 8px lightgrey;
+    width: 40%;
+}
+.more-info{
+    color: var(--grey-color);
+    font-size: var(--font-size-help-text);
+    font-weight: var(--font-weight-regular);
+    margin-bottom: 0;
+}
+input[type="email"] {
+    width: 99%;
+    height: 55px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: var(--font-size-placeholder);
+    color: var(--grey-color);
+    border: 1px solid var(--light-grey-color);
+    background-color: var(--white-bg-color);
+}
+
+input::placeholder{
+    color: var(--grey-color);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-placeholder);
+}
+</style>
+<body>
+    <div class="container__page">
+        <div class="content__page">
+            <div class="container__header">
+                <div class="container__logo">
+                    <img src="./assets/images/logo-newsletter.svg" alt="Logo Newsletter" class="content__logo">
+                </div>
+                <div class="container__title">
+                    <div class="content__title">
+                        <h1 class="title">
+                            Join our newsletter
+                        </h1>
+                    </div>
+                </div>
+                <div class="container__subtitle">
+                    <div class="content__subtitle">
+                        <p class="subtitle">
+                            Keep up with our latest collections, exclusive deals, and special offers! We introduce a new collection every week, so stay tuned to snag the hottest items just for you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container__popup">
+                <div class="content__popup">
+                    <div class="container__form">
+                        <div class="container__input">
+                            <input type="email" placeholder="Enter your email address">
+                        </div>
+                        <div class="container__button">
+                            <div class="button">
+                                Subscribe now
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__more-info">
+                        <div class="content_more-info">
+                            <p class="more-info">
+                                Your email is 100% confidential and won’t send you any spam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
